@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { getSlug } from "../helper/helper"
 
 const BlogItems = ({item}) => {
   return (
@@ -11,7 +12,7 @@ const BlogItems = ({item}) => {
             <div className="blog-content">
                 <h2>{item.title} </h2>
                 <p>{item.content}</p>
-                <Link to={`/blog/${item.title}`} className="btn btn-info" href="/">Read More</Link>
+                <Link to={`/blog/${getSlug(item.title)}`} className="btn btn-info" href="/">Read More</Link>
             </div>
             </div>
         </article>
