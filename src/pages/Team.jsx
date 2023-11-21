@@ -4,7 +4,7 @@ const Team = () => {
   return (
     <>
         <Header />
-        Our Team
+        <h1>Our Team</h1>
     </>
   )
 }
