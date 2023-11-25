@@ -9,6 +9,9 @@ const About = () => {
   const handleCouterInc = () => {
     setCouter((prevState) => prevState + 1);
   }
+  const handleCouterReset = () => {
+    setCouter(0);
+  }
   return (
     <>
         <Header />
@@ -23,6 +26,7 @@ const About = () => {
                   <hr />
                   <button className="btn btn-danger mx-2" onClick={handleCouterDec}>--</button>
                   <button className="btn btn-info" onClick={handleCouterInc}>++</button>
+                  <button className="btn btn-info mx-2" onClick={handleCouterReset}>Reset</button>
                 </div>
               </div>
             </div>
