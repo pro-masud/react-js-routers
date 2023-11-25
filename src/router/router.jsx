@@ -7,6 +7,7 @@ import Team from "../pages/Team";
 import Single from "../pages/single";
 
 
+
 // create react router
 const router = createBrowserRouter([
     {
