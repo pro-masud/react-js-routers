@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import Team from "../pages/Team";
+import Single from "../pages/single";
 
 
 // create react router
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
     },
     {
         path:'/blog/:slug',
-        element:<Blog />
+        element:<Single />
     },
     {
         path:'/contact',
