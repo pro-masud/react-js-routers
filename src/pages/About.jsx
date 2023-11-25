@@ -3,6 +3,9 @@ import Header from "../components/Header"
 
 const About = () => {
   const [couter, setCouter] = useState(0);
+  const handleCouterDec = () => {
+    setCouter((prevState) => prevState -1);
+  }
   const handleCouterInc = () => {
     setCouter((prevState) => prevState + 1);
   }
@@ -18,7 +21,7 @@ const About = () => {
                 <div className="card-body">
                   <h2 style={{fontSize: "80px", color:"red", fontWeight: "bold"}}>{couter}</h2>
                   <hr />
-                  <button className="btn btn-danger mx-2">--</button>
+                  <button className="btn btn-danger mx-2" onClick={handleCouterDec}>--</button>
                   <button className="btn btn-info" onClick={handleCouterInc}>++</button>
                 </div>
               </div>
